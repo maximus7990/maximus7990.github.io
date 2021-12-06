@@ -1,4 +1,36 @@
-<div class="stoplight">
-    <img src="images/green.png" alt="" width="200px" height="200px">
-    <img src="images/red.png" alt="" width="200px" height="200px">
-</div>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<div class="whole">
+    <div class="light">
+        <!--On click for image swap on light-->
+        <img src="images/red.png" class="lightImg" id="defImg"  alt="" width="200px" height="200px" onclick="startRace()">
+    </div>
+    <div class="team1">
+        <img src="images/stl.png" class="team" id="stl" alt=""  width="75px" height="75px">
+    </div>
+    <div class="team2">
+        <img src="images/chc.png" class="team" id="chc" alt="" width="75px" height="75px">
+    </div>
+</div> 
+<div>
+    <img src="images/stl-win.jpg" class="winner" id="stlw" alt="" onclick="resetRace()">
+    <img src="images/chc-win.jpg" class="winner" id="chcw" alt="" onclick="resetRace()">
+</div> 
+
+
+<!-- testing random script
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
+<p class="ptest" id="demo"></p>
+testing random script -->
+
+<script src="jscript.js"></script>
+
+</body>
+
+
+<!-- style="position:relative; display:block; margin:20px; padding:20px" -->
